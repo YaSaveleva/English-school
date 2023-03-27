@@ -20,6 +20,7 @@
 .site-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .navigation {
     display: flex;
@@ -87,6 +88,7 @@
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 .icon {
     font-size: 25px;  
@@ -171,7 +173,7 @@
 .review {
     border-bottom: 1px solid #D6D3D1;
     padding: 30px 0;
-    width: 600px;
+    max-width: 600px;
 }
 .review-title-text {
     margin-bottom: 10px;
@@ -286,4 +288,64 @@
 :root {
     --primary-color: #F97316;
     --secondary-color: #57534E;
+}
+@media (max-width: 600px) {
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .main-title {
+        font-size: 40px;
+    }
+    .description {
+        flex-wrap: wrap;       
+    }
+    .description-frame {
+        width: 100%;
+    }
+    .description-text {
+        text-align: center;
+    } 
+    .guarantee {
+        display: block;
+    }
+    .prices {
+        flex-wrap: wrap;
+    }
+    .price {  
+        width: 100%; 
+    }
+    .contact {
+        display: block;
+        text-align: center;
+        line-height: 40px;
+    }
+    .review-block {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .guarantee-title {
+        text-align: center;
+    }
+    .media {
+        margin-left: 10px;
+    }
+    .guarantee-content {
+        margin-left: 10px;
+    }    
+    .reviews {
+        margin-left: 10px;
+    }
+    .registration-contact  {
+        margin-left: 10px;
+    }
+    .site-header {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contact-phone {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
 }
